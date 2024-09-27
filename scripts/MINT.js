@@ -23,9 +23,9 @@ async function main() {
   const contract = await OneNFT.attach(contractAddress);
 
   
-  await contract.mint(5);
+  await contract.mint(3);
 
-  console.log("successfully minted '5' tokens.");
+  console.log("successfully minted '3' tokens.");
 }
 
 main()
