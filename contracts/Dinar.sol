@@ -6,7 +6,7 @@ import "erc721a/contracts/ERC721A.sol";
 contract Dinar is ERC721A {
     address public owner;
 
-    uint256 public maxLimit = 5;
+    uint256 public maxLimit = 3;
 
     string baseUrl =
         "https://bronze-wooden-aardvark-881.mypinata.cloud/ipfs/Qmf4MNSp6aJ3N1FPbLVms6vcsdjgUPJ9Wv71VT3qUs3RSn";
@@ -25,7 +25,7 @@ contract Dinar is ERC721A {
     function mint(uint256 quantity) external payable onlyOwner {
         require(
             totalSupply() + quantity <= maxLimit,
-            "You can not mint more than 5 NFTs"
+            "You can not mint more than 3 NFTs"
         );
         _mint(msg.sender, quantity);
     }
