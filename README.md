@@ -8,7 +8,7 @@
 
 ## Description
 
-This project involves the deployment of a 5-item NFT collection using Bing AI-generated images. The NFTs are stored on IPFS using pinata.cloud, and an ERC721A contract is deployed to the Goerli Ethereum Testnet. The contract includes functionalities such as minting, transferring, and mapping the NFTs.
+This project involves the deployment of a 3-item NFT collection using Bing AI-generated images. The NFTs are stored on IPFS using pinata.cloud, and an ERC721A contract is deployed to the Goerli Ethereum Testnet. The contract includes functionalities such as minting, transferring, and mapping the NFTs.
 
 ## Getting Started
 
@@ -36,14 +36,14 @@ This project involves the deployment of a 5-item NFT collection using Bing AI-ge
 contract Dinar is ERC721A
 ```
 Name : Dinar  
-Symbol :IGN 
+Symbol :DNR 
 
 The `Dinar` contract extends the `ERC721A` contract and represents a collection of unique NFTs inspired by the Naruto series.
 
 ### Maximum Quantity of Tokens
 
 ```solidity
-uint256 public maxLimit = 5;
+uint256 public maxLimit = 3;
 ```
 
 The `maxLimit` variable sets the maximum number of NFTs that can be minted within this collection. In this contract, the maximum limit is set to 5 tokens.
