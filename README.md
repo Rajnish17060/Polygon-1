@@ -1,4 +1,4 @@
-# NFT Collection Deployment and Transfer 
+# Building with Polygon Bridge 
 
 > Sepolia to Amoy Bridge
 
@@ -16,8 +16,8 @@ This project involves the deployment of a 5-item NFT collection using Bing AI-ge
 
 * Node.js and npm installed.
 * Hardhat Ethereum development environment set up.
-* Metamask Configured to Sepolia Testnet
-* Test Sepolia in Account in Testnet Network
+* Metamask Configured to Polygon Amoy Testnet.
+* Test Polygon Amoy Testnet in Account in Testnet Network.
 
 ### Installation
 
@@ -25,11 +25,10 @@ This project involves the deployment of a 5-item NFT collection using Bing AI-ge
 2. Navigate to the project folder.
 3. Install dependencies: `npm install`
 ### Wallet Config
-- Network name : Sepolia
-- New RPC URL : https://polygon-amoy.blockpi.network/v1/rpc/public
-- Chain ID : 5
-- Currency Symbo : ETH
-- Block Explorer URL : https://ethereum-sepolia-rpc.publicnode.com
+- Network name : POLYGON AMOY TESTNET
+- New RPC URL :  https://rpc-amoy.polygon.technology/
+- Chain ID : 80002
+- Currency Symbo : POL
 > Block Explorer URL is Optional
 ### Contract Name and Symbol
 
@@ -68,18 +67,18 @@ string public prompt = "A Under-water world Portait, A Creative Futuristic World
 
 1. Create an `.env` file and set your Ethereum wallet private key.
 2. Configure Hardhat network settings in `hardhat.config.js`.
-3. Run the deployment script: `npx hardhat run scripts/DEPLOY.js --network sepolia`
+3. Run the deployment script: `npx hardhat run scripts/DEPLOY.js --network amoy`
 
 ### Batch Mint NFTs
 
 1. Edit the `MINT.js` script with required details.
-2. Run the script: `npx hardhat run scripts/MINT.js --network sepolia`
+2. Run the script: `npx hardhat run scripts/MINT.js --network amoy`
 
 ### Batch Transfer NFTs to Polygon Mumbai
 
 1. Set up FxPortal Bridge for Ethereum to Polygon transfer.
 2. Edit the `TransferTokens.js` script with necessary details.
-3. Run the script: `npx hardhat run scripts/TransferTokens.js --network sepolia`
+3. Run the script: `npx hardhat run scripts/TransferTokens.js --network amoy`
 
 ### Check Balance 
 1. Edit the `getBalance.js` script with required details.
@@ -88,16 +87,4 @@ string public prompt = "A Under-water world Portait, A Creative Futuristic World
 - [Amoy Testnet Explorer](https://www.oklink.com/amoy)
 - [Sepolia PoS Chain Testnet Explorer](https://sepolia.etherscan.io)
 ## Authors
-
-- Sunil Kumar
-- sunilchaudhary5879@gmail.com
-- @Sunil Kumar: [GitHub Profile](https://github.com/SUNILCHOUDHARY5764)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-
-## Help
-
-For common issues, refer to the troubleshooting section in the official Hardhat documentation or Feel free to reach out to me via email.
+Rajnish Kumar
